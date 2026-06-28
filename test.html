@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UT WORKOUT Preview — 配線テスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0f1a2e; --gold:#b08a30; --gold-bright:#d4a84a; --ivory:#e8dfc9; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 35%, #16243d 0%, var(--navy) 70%);
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--ivory);
+    padding: 24px;
+  }
+  .card {
+    max-width: 560px;
+    width: 100%;
+    border: 1px solid rgba(176,138,48,0.5);
+    padding: 48px 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.02);
+  }
+  .eyebrow {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gold);
+    margin: 0 0 20px;
+  }
+  h1 {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    margin: 0 0 16px;
+    color: #fff;
+  }
+  .line {
+    width: 80px;
+    height: 1px;
+    margin: 24px auto;
+    background: linear-gradient(to right, transparent, var(--gold-bright), transparent);
+  }
+  p { font-size: 15px; line-height: 1.9; margin: 0 0 8px; color: #cfc6b0; }
+  .ok { color: var(--gold-bright); font-weight: 700; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <p class="eyebrow">ULTRA THEORY — UT WORKOUT</p>
+    <h1>GitHub Pages 配線テスト</h1>
+    <div class="line"></div>
+    <p>このページが <span class="ok">この見た目どおり</span>（紺背景・金の枠・明朝のラベル）で表示されていれば、</p>
+    <p>アップロード → GitHub Pages → 公開URL のパイプラインは正常に通っています。</p>
+    <p>次は本番の章HTML（2-a.html など）を組み立てて差し替えていきます。</p>
+  </div>
+</body>
+</html>
