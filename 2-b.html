@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UT WORKOUT 2-B 波の目線 — プレビュー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#f2f2f0;}
+.ut-preview-body{max-width:860px;margin:0 auto;padding:0 0 40px;background:#fff;}
+.ut-preview-body > img,.ut-preview-eyecatch{display:block;max-width:100%;height:auto;margin:0 auto;}
+.ut-preview-head{text-align:center;margin:60px auto 20px;padding:0 20px;}
+.ut-preview-head.tight{margin:16px auto 8px;}
+.ut-preview-head .t{font-size:25px;font-weight:700;color:#1a1a18;letter-spacing:0.04em;line-height:1.4;font-family:'Noto Sans JP',sans-serif;}
+.ut-preview-head .s{font-size:13px;color:#8a8276;margin-top:10px;letter-spacing:0.08em;}
+/* ================================================
+   UT WORKOUT 章テンプレートCSS — v1
+   2026-05-27 統合版
+   - A-2デザインをベースに、A-1独自要素を吸収
+   - クラス名を ut-chapter-wrap-v1 に統一
+   - 各ページのカスタムCSS欄に貼り付けて使用
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Share+Tech+Mono&display=swap');
+
+
+/* ===== ラッパー ===== */
+.ut-chapter-wrap-v1 {
+  background: #ffffff;
+  color: #2a2a28;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  box-sizing: border-box;
+}
+
+.ut-chapter-wrap-v1 *,
+.ut-chapter-wrap-v1 *::before,
+.ut-chapter-wrap-v1 *::after {
+  box-sizing: border-box;
+}
+
+.ut-chapter-wrap-v1 p {
+  margin: 0 0 1.4em;
+}
+
+.ut-chapter-wrap-v1 p:last-child {
+  margin-bottom: 0;
+}
+
+.ut-chapter-wrap-v1 strong {
+  color: #1a1a18 !important;
+  font-weight: 600 !important;
+}
+
+.ut-chapter-wrap-v1 em {
+  font-style: normal;
+  border-bottom: 1px solid #b08a30;
+  padding-bottom: 1px;
+}
+
+
+/* ===== チャプターリード（章導入のリード文） ===== */
+.ut-chapter-wrap-v1 .chapter-lead {
+  font-size: 16px !important;
+  line-height: 1.95 !important;
+  color: #2a2a28 !important;
+  margin: 24px 0 36px !important;
+  padding: 0 !important;
+}
+
+.ut-chapter-wrap-v1 .chapter-lead strong {
+  color: #1a1a18 !important;
+  font-weight: 600 !important;
+}
+
+
+/* ===== キャラブロック共通 ===== */
+.ut-chapter-wrap-v1 .basic-block {
+  display: flex !important;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 24px !important;
+  margin: 32px 0 !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #fff8f4 !important;
+  border-left: 3px solid #e07c3a !important;
+}
+
+.ut-chapter-wrap-v1 .basic-icon {
+  width: 44px !important;
+  min-width: 44px;
+  max-width: 44px;
+  flex: 0 0 44px;
+  height: auto;
+  margin-top: 2px;
+}
+
+.ut-chapter-wrap-v1 .basic-icon img {
+  width: 100% !important;
+  max-width: 44px !important;
+  height: auto !important;
+  display: block;
+}
+
+.ut-chapter-wrap-v1 .basic-speech {
+  flex: 1;
+}
+
+.ut-chapter-wrap-v1 .basic-name {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.25em;
+  margin-bottom: 6px !important;
+  margin-top: 0 !important;
+  text-transform: uppercase;
+  font-weight: normal !important;
+  color: #e07c3a !important;
+}
+
+.ut-chapter-wrap-v1 .basic-text {
+  font-size: 14px !important;
+  line-height: 1.9 !important;
+  color: #333 !important;
+  margin: 0 !important;
+}
+
+/* p.basic-text / p.basic-name 使用時の余白事故防止 */
+.ut-chapter-wrap-v1 p.basic-text,
+.ut-chapter-wrap-v1 p.section-body,
+.ut-chapter-wrap-v1 p.point-box-text {
+  margin: 0 !important;
+}
+
+.ut-chapter-wrap-v1 .section-body + .section-body {
+  margin-top: 1.4em !important;
+}
+
+.ut-chapter-wrap-v1 .basic-text strong {
+  color: #1a1a18 !important;
+  font-weight: 600 !important;
+}
+
+.ut-chapter-wrap-v1 .basic-text em {
+  border-bottom-color: #e07c3a !important;
+}
+
+
+/* ===== Moriブロック（フォレストグリーン） ===== */
+.ut-chapter-wrap-v1 .mori-block {
+  background: #f0f7ed !important;
+  border-left: 3px solid #6aaa64 !important;
+}
+
+.ut-chapter-wrap-v1 .mori-name {
+  color: #4a8a44 !important;
+}
+
+.ut-chapter-wrap-v1 .mori-block .basic-text strong {
+  color: #2a5a26 !important;
+}
+
+.ut-chapter-wrap-v1 .mori-block .basic-text em {
+  border-bottom-color: #6aaa64 !important;
+}
+
+
+/* ===== CSブロック（シルバー） ===== */
+.ut-chapter-wrap-v1 .cs-block {
+  background: #f4f6f8 !important;
+  border-left: 3px solid #a8b4c0 !important;
+}
+
+.ut-chapter-wrap-v1 .cs-name {
+  color: #6b7faa !important;
+}
+
+.ut-chapter-wrap-v1 .cs-block .basic-text strong {
+  color: #4a5888 !important;
+}
+
+.ut-chapter-wrap-v1 .cs-block .basic-text em {
+  border-bottom-color: #a8b4c0 !important;
+}
+
+
+/* ===== OMEGAブロック（ブラック×ゴールド） ===== */
+.ut-chapter-wrap-v1 .omega-block {
+  background: #1a1a1a !important;
+  border-left: 3px solid #c9a84c !important;
+}
+
+.ut-chapter-wrap-v1 .omega-name {
+  color: #c9a84c !important;
+}
+
+.ut-chapter-wrap-v1 .omega-block .basic-text,
+.ut-chapter-wrap-v1 .omega-block p {
+  color: #e8e8e8 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-style: italic;
+}
+
+.ut-chapter-wrap-v1 .omega-block .basic-text strong {
+  color: #c9a84c !important;
+}
+
+.ut-chapter-wrap-v1 .omega-block .basic-text em {
+  border-bottom-color: #c9a84c !important;
+  color: #e8e8e8 !important;
+}
+
+
+/* ===== セクション ===== */
+.ut-chapter-wrap-v1 .ut-section {
+  padding: 48px 0 0;
+}
+
+.ut-chapter-wrap-v1 .section-eyebrow {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 11px !important;
+  letter-spacing: 0.25em;
+  color: #b08a30 !important;
+  text-transform: uppercase;
+  margin-bottom: 10px !important;
+  margin-top: 0 !important;
+  font-weight: normal !important;
+  display: block;
+}
+
+.ut-chapter-wrap-v1 .section-title {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em;
+  color: #1a1a18 !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+  line-height: 1.4 !important;
+  border: none !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+.ut-chapter-wrap-v1 h2.section-title {
+  background: none !important;
+  border-left: none !important;
+  padding-left: 0 !important;
+  border-bottom: none !important;
+}
+
+.ut-chapter-wrap-v1 .section-rule {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #b08a30;
+  margin: 0 0 28px;
+  border: none;
+}
+
+.ut-chapter-wrap-v1 .section-body {
+  font-size: 15px !important;
+  color: #2a2a28 !important;
+  line-height: 1.9 !important;
+  margin: 0 !important;
+}
+
+.ut-chapter-wrap-v1 .section-body strong {
+  color: #1a1a18 !important;
+  font-weight: 600 !important;
+}
+
+
+/* ===== 図解エリア ===== */
+.ut-chapter-wrap-v1 .figure-wrap {
+  margin: 32px auto !important;
+  padding: 28px 20px 16px !important;
+  background: #fafafa !important;
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  max-width: 820px;
+}
+
+.ut-chapter-wrap-v1 .figure-wrap svg,
+.ut-chapter-wrap-v1 .figure-wrap img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.ut-chapter-wrap-v1 .figure-wrap svg text {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.ut-chapter-wrap-v1 .figure-caption {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.15em;
+  color: #bbb !important;
+  text-transform: uppercase;
+  margin-top: 16px !important;
+  text-align: center;
+}
+
+
+/* ===== 引用風ワンライナー ===== */
+.ut-chapter-wrap-v1 .quote-line {
+  margin: 1.8em 0 !important;
+  padding: 1.2em 0 1.2em 1.5em !important;
+  border-left: 2px solid #1a1a18 !important;
+  background: none !important;
+}
+
+.ut-chapter-wrap-v1 .quote-line p {
+  margin: 0 !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  font-size: 19px !important;
+  font-weight: 500 !important;
+  color: #1a1a18 !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0.02em !important;
+}
+
+
+/* ===== ポイントボックス（定義・Key Point） ===== */
+.ut-chapter-wrap-v1 .point-box {
+  background: #faf7f0 !important;
+  border: 1px solid #e8ddc0 !important;
+  border-left: 3px solid #b08a30 !important;
+  padding: 20px 24px !important;
+  margin: 28px 0 !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.ut-chapter-wrap-v1 .point-box-label {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.25em;
+  color: #b08a30 !important;
+  text-transform: uppercase;
+  margin-bottom: 10px !important;
+  font-weight: normal !important;
+}
+
+.ut-chapter-wrap-v1 .point-box-text {
+  font-size: 15px !important;
+  color: #2a2a28 !important;
+  line-height: 1.85 !important;
+  margin: 0 !important;
+}
+
+
+/* ===== SUMMARY ボックス ===== */
+.ut-chapter-wrap-v1 .summary-box {
+  padding: 24px 28px !important;
+  border: 1px solid #e8e8e0 !important;
+  background: #fdfcf8 !important;
+  border-radius: 2px !important;
+  margin: 36px 0 !important;
+  box-shadow: none !important;
+}
+
+.ut-chapter-wrap-v1 .summary-label {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.25em;
+  color: #b08a30 !important;
+  margin-bottom: 14px !important;
+  font-weight: normal !important;
+  display: block;
+}
+
+.ut-chapter-wrap-v1 .summary-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 2 !important;
+}
+
+.ut-chapter-wrap-v1 .summary-list li {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 0.4em !important;
+  padding: 0 !important;
+  background: none !important;
+  list-style: none !important;
+}
+
+.ut-chapter-wrap-v1 .summary-list li::before {
+  display: none !important;
+}
+
+.ut-chapter-wrap-v1 .summary-list .num {
+  flex-shrink: 0;
+  width: 2em;
+  color: #b08a30;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+}
+
+
+/* ===== テーブル ===== */
+.ut-chapter-wrap-v1 .ut-table-wrap {
+  margin: 28px 0 !important;
+  overflow-x: auto;
+}
+
+.ut-chapter-wrap-v1 .ut-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #fff;
+}
+
+.ut-chapter-wrap-v1 .ut-table thead {
+  background: #faf7f0;
+  border-bottom: 2px solid #b08a30;
+}
+
+.ut-chapter-wrap-v1 .ut-table th {
+  padding: 12px 16px !important;
+  text-align: left;
+  font-weight: 600 !important;
+  color: #1a1a18 !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 11px !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none !important;
+}
+
+.ut-chapter-wrap-v1 .ut-table td {
+  padding: 14px 16px !important;
+  border-bottom: 1px solid #ebebeb !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  color: #2a2a28 !important;
+  vertical-align: top;
+  line-height: 1.7;
+}
+
+.ut-chapter-wrap-v1 .ut-table tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+.ut-chapter-wrap-v1 .ut-table td strong {
+  color: #b08a30 !important;
+}
+
+.ut-chapter-wrap-v1 .ut-table td em {
+  border-bottom: none !important;
+  color: #1a1a18 !important;
+  font-weight: 500;
+}
+
+
+/* ===== 粒度比較カード（OK/NG） ===== */
+.ut-chapter-wrap-v1 .ut-grain-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card {
+  padding: 18px 20px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card.ng {
+  background: #fdf4f4;
+  border-color: #f0c8c8;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card.ok {
+  background: #f4faf6;
+  border-color: #c8e0d0;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card-head {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card.ng .ut-grain-card-head {
+  color: #b13838;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card.ok .ut-grain-card-head {
+  color: #2a7a4a;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card-body {
+  font-size: 14px;
+  color: #2a2a28;
+  line-height: 1.8;
+}
+
+.ut-chapter-wrap-v1 .ut-grain-card-body strong {
+  color: #1a1a18 !important;
+}
+
+
+/* ===== CSノート ===== */
+.ut-chapter-wrap-v1 .cs-note {
+  background: #f4f6f8 !important;
+  border-left: 3px solid #a8b4c0 !important;
+  padding: 18px 22px !important;
+  margin: 24px 0 !important;
+  border-radius: 0 !important;
+}
+
+.ut-chapter-wrap-v1 .cs-note-label {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.2em;
+  color: #6b7faa !important;
+  text-transform: uppercase;
+  margin-bottom: 8px !important;
+  font-weight: normal !important;
+}
+
+.ut-chapter-wrap-v1 .cs-note-text {
+  font-size: 14px !important;
+  color: #333 !important;
+  line-height: 1.85 !important;
+  margin: 0 !important;
+}
+
+
+/* ===== 次回予告 ===== */
+.ut-chapter-wrap-v1 .next-cue {
+  margin: 42px 0 0 !important;
+  text-align: center !important;
+  font-family: 'Noto Sans JP', sans-serif !important;
+  color: #555550 !important;
+  line-height: 1.95 !important;
+}
+
+.ut-chapter-wrap-v1 .next-cue-soft {
+  font-size: 13px !important;
+  color: #888880 !important;
+}
+
+
+/* ===== 区切り線 ===== */
+.ut-chapter-wrap-v1 .ut-divider {
+  border: none !important;
+  border-top: 1px solid #ebebeb !important;
+  margin: 48px 0 0 !important;
+  background: none !important;
+  height: 1px !important;
+}
+
+
+/* ===== バージョン比較ボックス（A-3で導入、他章でも使用可） ===== */
+.ut-chapter-wrap-v1 .version-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.ut-chapter-wrap-v1 .version-cell {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 18px 20px;
+}
+
+.ut-chapter-wrap-v1 .version-label {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 11px !important;
+  letter-spacing: 0.2em;
+  color: #b08a30 !important;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ut-chapter-wrap-v1 .version-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a18 !important;
+  margin-bottom: 8px;
+}
+
+.ut-chapter-wrap-v1 .version-body {
+  font-size: 13.5px;
+  color: #2a2a28;
+  line-height: 1.8;
+  margin: 0 !important;
+}
+
+.ut-chapter-wrap-v1 .version-tag {
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.1em;
+  padding: 3px 9px;
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.ut-chapter-wrap-v1 .version-tag.v-a {
+  background: #faf7f0;
+  color: #b08a30;
+  border: 1px solid #d4b860;
+}
+
+.ut-chapter-wrap-v1 .version-tag.v-b {
+  background: #fdfcf8;
+  color: #6b7faa;
+  border: 1px solid #a8b4c0;
+}
+
+
+/* ===== コンセプトブロック（黒背景・三角形の空間など） ===== */
+.ut-chapter-wrap-v1 .concept-block {
+  background: #0f0f14;
+  border-radius: 4px;
+  padding: 28px 26px;
+  margin: 28px 0;
+}
+
+.ut-chapter-wrap-v1 .concept-label {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 0.3em;
+  color: #c9a84c !important;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.ut-chapter-wrap-v1 .concept-text,
+.ut-chapter-wrap-v1 .concept-block p {
+  color: #ececec !important;
+  font-size: 14px;
+  line-height: 2;
+  margin: 0 0 1em !important;
+}
+
+.ut-chapter-wrap-v1 .concept-block p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.ut-chapter-wrap-v1 .concept-text em,
+.ut-chapter-wrap-v1 .concept-block em {
+  color: #c9a84c !important;
+  font-style: normal !important;
+  font-weight: 600;
+  border-bottom: none !important;
+}
+
+.ut-chapter-wrap-v1 .concept-text strong,
+.ut-chapter-wrap-v1 .concept-block strong {
+  color: #ffffff !important;
+}
+
+
+/* ===== SVG内テキスト ===== */
+.ut-chapter-wrap-v1 svg text {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* ===== モバイル対応 ===== */
+@media (max-width: 600px) {
+  .ut-chapter-wrap-v1 {
+    padding: 24px 16px 60px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .ut-chapter-wrap-v1 .chapter-lead {
+    font-size: 15px !important;
+  }
+
+  .ut-chapter-wrap-v1 .basic-block {
+    padding: 16px !important;
+    gap: 12px;
+  }
+
+  .ut-chapter-wrap-v1 .basic-icon {
+    width: 38px !important;
+    min-width: 38px;
+    max-width: 38px;
+    flex: 0 0 38px;
+    height: auto;
+  }
+
+  .ut-chapter-wrap-v1 .basic-icon img {
+    max-width: 38px !important;
+  }
+
+  .ut-chapter-wrap-v1 .section-title {
+    font-size: 20px !important;
+  }
+
+  .ut-chapter-wrap-v1 .quote-line p {
+    font-size: 16px !important;
+  }
+
+  .ut-chapter-wrap-v1 .figure-wrap {
+    padding: 16px 12px 12px !important;
+  }
+
+  .ut-chapter-wrap-v1 .figure-wrap svg,
+  .ut-chapter-wrap-v1 .figure-wrap img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ut-chapter-wrap-v1 .point-box,
+  .ut-chapter-wrap-v1 .summary-box {
+    padding: 16px !important;
+  }
+
+  .ut-chapter-wrap-v1 .ut-table th,
+  .ut-chapter-wrap-v1 .ut-table td {
+    padding: 10px 12px !important;
+    font-size: 13px;
+  }
+
+  .ut-chapter-wrap-v1 .ut-grain-compare {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ut-chapter-wrap-v1 .version-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ut-chapter-wrap-v1 .concept-block {
+    padding: 20px 18px;
+  }
+
+  .ut-chapter-wrap-v1 .concept-text {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .ut-chapter-wrap-v1 .next-cue {
+    font-size: 14px !important;
+  }
+}
+
+
+/* ================================================
+   ANTHEM特有：サイドコンテンツのz-index修正
+   ヘッダー画像が覆いかぶさる問題対策
+   ================================================ */
+#side_col,
+#product_side_content {
+  position: relative;
+  z-index: 10;
+}
+
+#side_col a,
+#side_col .button_animation_type3 {
+  position: relative;
+  z-index: 11;
+}
+#utFig202{cursor:pointer;}
+#utFig202 .ut-fig-hint{animation:utHintPulse 1.8s ease-in-out infinite;}
+#utFig202.is-touched .ut-fig-hint{animation:none;}
+@keyframes utHintPulse{0%,100%{transform:scale(1);opacity:.95}50%{transform:scale(1.05);opacity:1}}
+@media (max-width: 600px){
+  #utFig202 .ut-fig-hint{
+    font-size:11px !important;
+    padding:5px 11px !important;
+    right:8px !important;
+    bottom:8px !important;
+  }
+  #utFig202 .ut-fig-step{
+    width:22px !important;
+    height:22px !important;
+    line-height:22px !important;
+    font-size:11px !important;
+    bottom:7px !important;
+    left:7px !important;
+  }
+}
+.ut-chapter-wrap-v1 .ut-zoomfig { border-radius: 0 !important; }
+/* === チャプター先頭の余白詰め === */
+/* ① wrap上端を圧縮（全章共通 40px→16px） */
+.ut-chapter-wrap-v1 { padding-top: 16px !important; }
+/* ② 先頭ブロックの上マージン除去（A-1のbasic-block 32px等。eyebrow始まりの章は元々0なので無害） */
+.ut-chapter-wrap-v1 > *:first-child { margin-top: 0 !important; }
+/* 全UT-Workout共通：ヘッドライン下を一括管理 */
+.product_content .headline_area { margin: 0 0 24px !important; }
+
+</style>
+</head>
+<body>
+<div class="ut-preview-body">
+<img class="ut-preview-eyecatch" src="https://ultra-theory.jp/wp-content/uploads/2026/04/800x500_contents_elev.jpg" alt="">
+<div class="ut-preview-head tight"><div class="t">B-1｜上昇目線と下降目線</div><div class="s">CHAPTER B-1 — DIRECTIONAL BIAS</div></div>
+<div class="ut-chapter-wrap-v1">
+
+<div class="section-eyebrow">B-1｜上昇目線と下降目線</div>
+
+<div class="chapter-lead">目線とは何か。そしていつ変わるのか。チャートを読む上で最初に固める<strong>「方向の軸」</strong>。</div>
+
+<!-- Mori intro -->
+<div class="basic-block mori-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/mori_claude_anime.svg" alt="Mori"></div>
+<div class="basic-speech">
+<div class="basic-name mori-name">Mori</div>
+<div class="basic-text">2-Aで「波とは何か」を話した。今回は<strong>「波の目線」</strong>の話。<br><br>チャートを見ていると、ある瞬間に「あれ、下に向かったんじゃないか？」と感じることがある。でも、その感覚に引きずられてはいけない場面がある。<br><br>目線が変わる条件は、たったひとつしかない。</div>
+</div>
+</div>
+
+<!-- Section 01 -->
+<div class="ut-section">
+<div class="section-eyebrow">Section 01</div>
+<h2 class="section-title">目線とは何か</h2>
+<div class="section-body">「目線」とはトレンドの方向に対する、<em>構造的な判断</em>だ。「なんとなく上っぽい」という感覚とは違う。波の構造から導き出される、論理的な立場のこと。</div>
+</div>
+
+<div class="ut-table-wrap">
+<table class="ut-table">
+<thead>
+<tr><th>トレンド</th><th>定義</th><th>目線</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>上昇トレンド</strong></td><td>波の高値・安値が連続して<em>切り上がっている</em>状態</td><td><strong>上目線</strong></td></tr>
+<tr><td><strong>下降トレンド</strong></td><td>波の高値・安値が連続して<em>切り下がっている</em>状態</td><td><strong>下目線</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="section-body">目線の重要性は、<strong>「変わらない間は変えない」</strong>という点にある。上昇トレンドの最中に陰線が何本続こうと、目線はずっと上のまま。それが構造的な判断というものだ。</div>
+
+<!-- Fig.01 zoom -->
+<div class="figure-wrap">
+
+<div class="ut-zoomfig-guide" style="display:table;width:100%;box-sizing:border-box;margin:0 0 12px;padding:12px 16px;background:linear-gradient(90deg,#fdf6e3,#fbefd6);border:1px solid #e3cd92;border-radius:8px;box-shadow:0 1px 4px rgba(176,138,48,0.15);">
+<div style="display:table-cell;width:44px;vertical-align:middle;">
+<span class="ut-zoomfig-glass" style="display:inline-block;width:34px;height:34px;line-height:30px;text-align:center;font-size:17px;background:#fffdf6;border:2px solid #b08a30;border-radius:50%;box-sizing:border-box;">🔍</span>
+</div>
+<div style="display:table-cell;vertical-align:middle;padding-left:12px;">
+<div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#b08a30;margin-bottom:3px;">TAP TO ZOOM</div>
+<div style="font-size:13.5px;font-weight:bold;color:#3a2f12;line-height:1.5;">図解はこの枠の中で拡大できます</div>
+<div style="font-size:12px;color:#8a7a4a;line-height:1.6;margin-top:2px;">ダブルタップ → 拡大　／　ドラッグ → 移動　／　2本指 → ピンチ</div>
+</div>
+</div>
+<script>
+(function(){
+if(!document.getElementById('ut-zoomfig-guide-kf')){
+var s=document.createElement('style');
+s.id='ut-zoomfig-guide-kf';
+s.textContent='@keyframes utZoomGlassPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(176,138,48,0.4);}50%{transform:scale(1.1);box-shadow:0 0 0 7px rgba(176,138,48,0);}}.ut-zoomfig-glass{animation:utZoomGlassPulse 2.2s ease-in-out infinite;}';
+document.head.appendChild(s);
+}
+})();
+</script>
+
+<div class="ut-zoomfig" style="position:relative;overflow:hidden;border-radius:0;background:#fff;touch-action:pan-y;cursor:zoom-in;">
+<img src="https://ultra-theory.jp/wp-content/uploads/ut-workout/2/fig2b-01.png" alt="上昇トレンドの構造：高値・安値が連続して切り上がる" draggable="false" style="width:100%;height:auto;display:block;transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none;pointer-events:none;">
+<div class="ut-zoomfig-hint" style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(26,26,26,0.75);color:#fff;font-size:11px;letter-spacing:0.08em;padding:5px 14px;border-radius:14px;pointer-events:none;transition:opacity 0.4s;white-space:nowrap;">ダブルタップ／ダブルクリックで拡大</div>
+<button type="button" class="ut-zoomfig-reset" style="display:none;position:absolute;top:10px;right:10px;background:rgba(26,26,26,0.75);color:#fff;border:0;font-size:10px;letter-spacing:0.15em;padding:6px 12px;border-radius:4px;cursor:pointer;font-family:'Share Tech Mono',monospace;">RESET</button>
+</div>
+
+<div class="figure-caption">Fig.01 — 上昇トレンドの構造。高値と安値がともに切り上がり続けている間、目線は上のまま</div>
+
+<div class="ut-fig-legend" style="margin:20px 0 0;padding:16px 20px;background:linear-gradient(90deg,#fdf6e3,#fbefd6);border:2px solid #e5e5e5;border-radius:8px;box-sizing:border-box;">
+<div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#999;margin-bottom:12px;">LEGEND — 線の見方</div>
+<div style="display:table;width:100%;">
+<div style="display:table-row;">
+<div style="display:table-cell;width:60px;vertical-align:middle;padding:6px 0;"><span style="display:inline-block;width:48px;border-top:5px solid #b08a30;vertical-align:middle;"></span></div>
+<div style="display:table-cell;vertical-align:middle;padding:6px 0 6px 12px;font-size:13.5px;color:#222;"><strong>波</strong><span style="color:#888;font-size:12px;margin-left:8px;">ゴールド太線／高安をつないだ波</span></div>
+</div>
+<div style="display:table-row;">
+<div style="display:table-cell;vertical-align:middle;padding:6px 0;"><span style="display:inline-block;width:48px;border-top:2px dashed #d4537e;vertical-align:middle;"></span></div>
+<div style="display:table-cell;vertical-align:middle;padding:6px 0 6px 12px;font-size:13.5px;color:#222;"><strong>押し安値</strong><span style="color:#888;font-size:12px;margin-left:8px;">ストロベリー点線／切り上がる安値</span></div>
+</div>
+</div>
+</div>
+
+<div class="ut-fig-help" style="margin:14px 0 0;padding:11px 15px;background:#f4f6f8;border-left:4px solid #9fb0c4;border-radius:6px;box-sizing:border-box;">
+<div style="display:table;width:100%;">
+<div style="display:table-cell;width:28px;vertical-align:top;"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;font-size:12px;font-weight:bold;color:#fff;background:#9fb0c4;border-radius:50%;">?</span></div>
+<div style="display:table-cell;vertical-align:top;font-size:12px;line-height:1.75;color:#556;"><strong style="color:#3a4a5c;">PC上でドラッグがうまく動かないときは</strong><br>画像を拡大した後、または一度ドラッグした後に再びドラッグしても動かない場合は、<strong>画像の外側を一度クリック</strong>してから、もう一度画像をドラッグすると動くことがあります。</div>
+</div>
+</div>
+
+</div>
+
+<hr class="ut-divider" />
+
+<!-- Section 02 -->
+<div class="ut-section">
+<div class="section-eyebrow">Section 02</div>
+<h2 class="section-title">目線が変わる条件はひとつだけ</h2>
+<div class="section-body">UTにおける目線転換の条件は、シンプルに定義されている。</div>
+</div>
+
+<div class="concept-block">
+<div class="concept-label">RULE — DIRECTION CHANGE</div>
+<p class="concept-text"><strong>上昇目線が変わる条件：押し安値が割れること。</strong><br>下降目線が変わる条件：<em>戻り高値が更新されること。</em></p>
+<p class="concept-text">それ以外の条件はない。「なんとなく下に向かった気がする」は目線転換の根拠にならない。</p>
+</div>
+
+<div class="section-body">ここで「押し安値」という概念が登場する。これがA-3で学んだ「頂点の確定」と深く結びついている。</div>
+
+<!-- xy identification -->
+<div class="section-body">ただ、多くの人がここでつまずく。<em>どれが押し安値なのか</em>、という問題だ。</div>
+
+<div class="section-body">下の図を見てほしい。<strong>a・b は押し安値</strong>。けれど <strong>x・y</strong> も安値なのに、押し安値とは呼ばない。なぜか。</div>
+
+<div class="section-body">x・y は、①②という上昇波を<em>構成している内部の小さな揺れ</em>にすぎない。①②という波そのものがまだ崩れていない以上、その内部の x・y は、この粒度では押し安値に「昇格」しない。<strong>押し安値とは、判断レベル（ローソク波）の波が押した安値のこと</strong>——2-Aで学んだ<em>粒度の固定</em>が、ここで効いてくる。</div>
+
+<!-- Fig.02 zoom -->
+<div class="figure-wrap">
+
+<div class="ut-zoomfig-guide" style="display:table;width:100%;box-sizing:border-box;margin:0 0 12px;padding:12px 16px;background:linear-gradient(90deg,#fdf6e3,#fbefd6);border:1px solid #e3cd92;border-radius:8px;box-shadow:0 1px 4px rgba(176,138,48,0.15);">
+<div style="display:table-cell;width:44px;vertical-align:middle;">
+<span class="ut-zoomfig-glass" style="display:inline-block;width:34px;height:34px;line-height:30px;text-align:center;font-size:17px;background:#fffdf6;border:2px solid #b08a30;border-radius:50%;box-sizing:border-box;">🔍</span>
+</div>
+<div style="display:table-cell;vertical-align:middle;padding-left:12px;">
+<div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#b08a30;margin-bottom:3px;">TAP TO ZOOM</div>
+<div style="font-size:13.5px;font-weight:bold;color:#3a2f12;line-height:1.5;">図解はこの枠の中で拡大できます</div>
+<div style="font-size:12px;color:#8a7a4a;line-height:1.6;margin-top:2px;">ダブルタップ → 拡大　／　ドラッグ → 移動　／　2本指 → ピンチ</div>
+</div>
+</div>
+
+<div class="ut-zoomfig" style="position:relative;overflow:hidden;border-radius:0;background:#fff;touch-action:pan-y;cursor:zoom-in;">
+<img src="https://ultra-theory.jp/wp-content/uploads/ut-workout/2/fig2b-02a.png" alt="押し安値（a・b）と、この粒度では押し安値ではない安値（x・y）の対比" draggable="false" style="width:100%;height:auto;display:block;transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none;pointer-events:none;">
+<div class="ut-zoomfig-hint" style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(26,26,26,0.75);color:#fff;font-size:11px;letter-spacing:0.08em;padding:5px 14px;border-radius:14px;pointer-events:none;transition:opacity 0.4s;white-space:nowrap;">ダブルタップ／ダブルクリックで拡大</div>
+<button type="button" class="ut-zoomfig-reset" style="display:none;position:absolute;top:10px;right:10px;background:rgba(26,26,26,0.75);color:#fff;border:0;font-size:10px;letter-spacing:0.15em;padding:6px 12px;border-radius:4px;cursor:pointer;font-family:'Share Tech Mono',monospace;">RESET</button>
+</div>
+
+<div class="figure-caption">Fig.02 — a・b は押し安値（確定）。x・y はこの粒度では押し安値ではない。押し安値を割らない限り、大きな陰線が来ても目線は上のまま</div>
+
+<div class="ut-fig-legend" style="margin:20px 0 0;padding:16px 20px;background:linear-gradient(90deg,#fdf6e3,#fbefd6);border:2px solid #e5e5e5;border-radius:8px;box-sizing:border-box;">
+<div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#999;margin-bottom:12px;">LEGEND — 線の見方</div>
+<div style="display:table;width:100%;">
+<div style="display:table-row;">
+<div style="display:table-cell;width:60px;vertical-align:middle;padding:6px 0;"><span style="display:inline-block;width:48px;border-top:5px solid #b08a30;vertical-align:middle;"></span></div>
+<div style="display:table-cell;vertical-align:middle;padding:6px 0 6px 12px;font-size:13.5px;color:#222;"><strong>①②</strong><span style="color:#888;font-size:12px;margin-left:8px;">ゴールド太線／上昇波</span></div>
+</div>
+<div style="display:table-row;">
+<div style="display:table-cell;vertical-align:middle;padding:6px 0;"><span style="display:inline-block;width:48px;border-top:2px dashed #d4537e;vertical-align:middle;"></span></div>
+<div style="display:table-cell;vertical-align:middle;padding:6px 0 6px 12px;font-size:13.5px;color:#222;"><strong>a・b</strong><span style="color:#888;font-size:12px;margin-left:8px;">押し安値（確定）</span></div>
+</div>
+<div style="display:table-row;">
+<div style="display:table-cell;vertical-align:middle;padding:6px 0;"><span style="display:inline-block;width:48px;border-top:2px dashed #ed93b1;vertical-align:middle;"></span></div>
+<div style="display:table-cell;vertical-align:middle;padding:6px 0 6px 12px;font-size:13.5px;color:#222;"><strong>x・y</strong><span style="color:#888;font-size:12px;margin-left:8px;">この粒度では押し安値ではない</span></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section-body">もうひとつ、前提がある。ここで根拠にする押し安値は、<em>確定した安値</em>であること。安値ができた瞬間はまだ「候補」で、押し安値として確定するのは後から——その順序は、すぐ次の <strong>B-2</strong> で見ていく。目線の根拠にできるのは、<strong>確定済みの押し安値だけ</strong>だ。</div>
+
+<div class="section-body">ちなみに、判断する粒度を<em>一つ下げて</em>見れば、x・y も押し安値になる。同じチャートでも、どの粒度で見るかで押し安値の位置は変わる。この<em>「粒度を変えると波が変わる」</em>構造は、次の 2-C「波とフラクタル」で正面から扱う。</div>
+
+<div class="basic-block mori-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/mori_claude_anime.svg" alt="Mori"></div>
+<div class="basic-speech">
+<div class="basic-name mori-name">Mori</div>
+<div class="basic-text">実例で考えよう。上昇トレンドの最中に<strong>大きな陰線</strong>が出たとする。<br><br>「これはトレンド転換じゃないか？」と感じるのは自然だ。でも問いはひとつ——<strong>押し安値を割ったか？</strong><br><br>割っていなければ、目線はずっと上。どれだけ視覚的に崩れた波が出ても、構造が崩れていない限り判断は変わらない。</div>
+</div>
+</div>
+
+<hr class="ut-divider" />
+
+<!-- Summary -->
+<div class="ut-section">
+<div class="section-eyebrow">Summary</div>
+<h2 class="section-title">B-1のポイントを整理する</h2>
+</div>
+
+<div class="ut-table-wrap">
+<table class="ut-table">
+<thead>
+<tr><th>概念</th><th>内容</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>目線</strong></td><td>トレンドの方向に対する構造的な判断。「なんとなく」ではなく波の構造から導く</td></tr>
+<tr><td><strong>目線が変わる条件</strong></td><td>上昇目線は<em>押し安値が割れたとき</em>に変わる。それ以外の条件はない</td></tr>
+<tr><td><strong>押し安値の見分け方</strong></td><td>判断レベル（ローソク波）の押した安値が押し安値。内部の小さな揺れ（x・y）は、この粒度では押し安値ではない</td></tr>
+<tr><td><strong>押し安値の確定</strong></td><td>その後の反発が直前高値をブレイクした瞬間に確定。それまでは「候補」に過ぎない</td></tr>
+<tr><td><strong>目視と判断レベル</strong></td><td>目視レベルの小さな揺れは目線に影響しない。判断基準は<em>押し安値を割ったか</em>だけ（→ A-2「粒度の固定」）</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="basic-block mori-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/mori_claude_anime.svg" alt="Mori"></div>
+<div class="basic-speech">
+<div class="basic-name mori-name">Mori</div>
+<div class="basic-text">目線は「変わるまで変えない」という強さを持ってほしい。<br><br>次のB-2では<strong>押し安値・戻り高値の確定順序</strong>をもっと詳しく見ていく。「未来が過去を確定させる」という構造を理解すると、チャートの見え方がもう一段変わってくるはずだ。</div>
+</div>
+</div>
+
+</div>
+
+<script>
+(function(){
+function initZoom(box){
+if(box.dataset.utzReady)return;
+box.dataset.utzReady='1';
+var img=box.querySelector('img');
+var hint=box.querySelector('.ut-zoomfig-hint');
+var rst=box.querySelector('.ut-zoomfig-reset');
+var scale=1,tx=0,ty=0,lastDist=0,lastTap=0;
+var ptrs=new Map();
+function clampPan(){
+var r=box.getBoundingClientRect();
+var minX=r.width-r.width*scale;
+var minY=r.height-r.height*scale;
+tx=Math.min(0,Math.max(minX,tx));
+ty=Math.min(0,Math.max(minY,ty));
+}
+function apply(){
+img.style.transform='translate('+tx+'px,'+ty+'px) scale('+scale+')';
+box.style.touchAction=(scale>1)?'none':'pan-y';
+box.style.cursor=(scale>1)?'grab':'zoom-in';
+rst.style.display=(scale>1)?'block':'none';
+}
+function zoomAt(cx,cy,f){
+var r=box.getBoundingClientRect();
+var x=cx-r.left,y=cy-r.top;
+var ns=Math.min(6,Math.max(1,scale*f));
+tx=x-(x-tx)*(ns/scale);
+ty=y-(y-ty)*(ns/scale);
+scale=ns;clampPan();apply();
+if(hint){hint.style.opacity=0;}
+}
+function resetAll(){scale=1;tx=0;ty=0;apply();}
+box.addEventListener('touchstart',function(e){if(e.touches.length>1){e.preventDefault();}},{passive:false});
+box.addEventListener('pointerdown',function(e){
+box.setPointerCapture(e.pointerId);
+ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+if(ptrs.size===2){
+var a=Array.from(ptrs.values());
+lastDist=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);
+}
+if(e.pointerType==='touch'&&ptrs.size===1){
+var now=Date.now();
+if(now-lastTap<300){
+if(scale>1){resetAll();}else{zoomAt(e.clientX,e.clientY,2.5);}
+}
+lastTap=now;
+}
+});
+box.addEventListener('pointermove',function(e){
+if(!ptrs.has(e.pointerId))return;
+var prev=ptrs.get(e.pointerId);
+ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+if(ptrs.size===1&&scale>1){
+tx+=e.clientX-prev.x;ty+=e.clientY-prev.y;
+clampPan();apply();
+}else if(ptrs.size===2){
+var a=Array.from(ptrs.values());
+var d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);
+var mx=(a[0].x+a[1].x)/2,my=(a[0].y+a[1].y)/2;
+if(lastDist>0){zoomAt(mx,my,d/lastDist);}
+lastDist=d;
+}
+});
+function up(e){ptrs.delete(e.pointerId);if(ptrs.size<2){lastDist=0;}}
+box.addEventListener('pointerup',up);
+box.addEventListener('pointercancel',up);
+box.addEventListener('wheel',function(e){
+e.preventDefault();
+zoomAt(e.clientX,e.clientY,e.deltaY<0?1.2:1/1.2);
+},{passive:false});
+box.addEventListener('dblclick',function(e){
+if(scale>1){resetAll();}else{zoomAt(e.clientX,e.clientY,2.5);}
+});
+rst.addEventListener('click',function(e){e.stopPropagation();resetAll();});
+}
+document.querySelectorAll('.ut-zoomfig').forEach(initZoom);
+})();
+</script>
+
+<div class="ut-preview-head"><div class="t">B-2｜押し安値・戻り高値の確定</div><div class="s">CHAPTER B-2 — CONFIRMATION</div></div>
+<img src="https://ultra-theory.jp/wp-content/uploads/2026/03/800x500_contents_jadge.jpg" alt="" width="800" height="500" class="alignnone size-full wp-image-852" />
+<div class="ut-chapter-wrap-v1">
+<div class="section-eyebrow">B-2｜押し安値・戻り高値の確定</div>
+
+<div class="chapter-lead">押し安値も戻り高値も、<strong>確定するまでは「候補」でしかない</strong>。そして確定は、いつも<strong>後から</strong>やってくる。この逆説を掴むと、目線の判断が一段安定する。</div>
+
+<!-- ========== Mori intro ========== -->
+<div class="basic-block mori-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/mori_claude_anime.svg" alt="Mori"></div>
+<div class="basic-speech">
+<div class="basic-name mori-name">Mori</div>
+<div class="basic-text">B-1で「目線が変わる条件は<strong>押し安値が割れること</strong>」を確認した。<br><br>でも——その押し安値は、<strong>いつ"押し安値"になるのか</strong>。ここを正確に掴んでいないと、目線の判断が根本からズレてしまう。<br><br>少し不思議な話をする。一度腑に落ちると、チャートの見え方が変わるはずだ。</div>
+</div>
+</div>
+
+<!-- ========== Section 01 ========== -->
+<div class="ut-section">
+<div class="section-eyebrow">Section 01</div>
+<h2 class="section-title">押し安値の確定順序</h2>
+<div class="section-body">まず上昇方向で考える。値動きの時系列はこうだ。</div>
+</div>
+
+<div style="margin:28px 0;">
+<div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#b08a30;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">①</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;">上昇（<strong>a → b</strong>）が起きる</div>
+</div>
+<div style="text-align:center;color:#ccc;font-size:16px;margin:2px 0 2px 14px;">↓</div>
+<div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#b08a30;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">②</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;">b から押しが入り、安値 d が形成される（この時点では<strong>まだ「直近安値」</strong>）</div>
+</div>
+<div style="text-align:center;color:#ccc;font-size:16px;margin:2px 0 2px 14px;">↓</div>
+<div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#b08a30;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">③</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;">d から反発した c が、<strong>b の高値を上抜ける</strong></div>
+</div>
+<div style="text-align:center;color:#ccc;font-size:16px;margin:2px 0 2px 14px;">↓</div>
+<div style="display:flex;align-items:flex-start;gap:14px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#00a0a0;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">④</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;"><strong>この瞬間に初めて、過去の d が「押し安値」として確定する</strong></div>
+</div>
+</div>
+
+<div class="figure-wrap">
+<img src="https://ultra-theory.jp/wp-content/uploads/ut-workout/2/fig-b2-01.svg" alt="押し安値の確定順序：c が b を上抜けた瞬間、過去の d が押し安値として確定する">
+<div class="figure-caption">Fig.01 — c が b を上抜けた瞬間、過去に存在していた d が「押し安値」として確定する</div>
+</div>
+
+<div class="concept-block">
+<div class="concept-label">THE PARADOX OF CONFIRMATION</div>
+<p class="concept-text">d は c より<strong>時間的に先に</strong>存在している。<br>しかし認識として確定するのは、<em>c の後</em>だ。</p>
+<p class="concept-text"><strong>未来の高値が、過去の安値を確定させる。</strong>リアルタイムでは、すべての安値は「候補」でしかない。</p>
+</div>
+
+<div class="section-body">これはチャートの不思議ではなく、<em>認識の構造</em>だ。「あの安値が押し安値だった」という事実は、その後のブレイクが起きて初めて成立する。</div>
+<div class="section-body">この"未来が過去を確定させる"逆説は、初めてではない。<strong>A-3「頂点の確定」</strong>で扱ったものと、同じだ。あのとき頂点で見たことが、ここでは押し安値で起きている。</div>
+<hr class="ut-divider" />
+
+<!-- ========== Section 02 ========== -->
+<div class="ut-section">
+<div class="section-eyebrow">Section 02</div>
+<h2 class="section-title">戻り高値の確定——完全な鏡像</h2>
+<div class="section-body">下降方向では、構造がそっくり<em>裏返る</em>。やっていることは押し安値と同じだ。</div>
+</div>
+
+<div style="margin:28px 0;">
+<div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#b08a30;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">①</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;">下落（<strong>a → b</strong>）が起きる</div>
+</div>
+<div style="text-align:center;color:#ccc;font-size:16px;margin:2px 0 2px 14px;">↓</div>
+<div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#b08a30;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">②</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;">b から戻りが入り、高値 d が形成される（この時点では<strong>まだ「直近高値」</strong>）</div>
+</div>
+<div style="text-align:center;color:#ccc;font-size:16px;margin:2px 0 2px 14px;">↓</div>
+<div style="display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#b08a30;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">③</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;">d から再び下落した c が、<strong>b の安値を下抜ける</strong></div>
+</div>
+<div style="text-align:center;color:#ccc;font-size:16px;margin:2px 0 2px 14px;">↓</div>
+<div style="display:flex;align-items:flex-start;gap:14px;">
+<div style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#00a0a0;color:#fff;font-family:'Share Tech Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;">④</div>
+<div style="flex:1;font-size:14px;color:#2a2a28;line-height:1.8;padding-top:3px;"><strong>この瞬間に初めて、過去の d が「戻り高値」として確定する</strong></div>
+</div>
+</div>
+
+<div class="figure-wrap">
+<img src="https://ultra-theory.jp/wp-content/uploads/ut-workout/2/fig-b2-02.svg" alt="戻り高値の確定順序：押し安値の完全な鏡像。c が b を下抜けた瞬間、過去の d が戻り高値として確定する">
+<div class="figure-caption">Fig.02 — 戻り高値も同じ構造。c が b を下抜けた瞬間、過去の d が「戻り高値」として確定する</div>
+</div>
+
+<div class="ut-table-wrap">
+<table class="ut-table">
+<thead>
+<tr><th>確定の対象</th><th>確定条件</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>押し安値</strong>（上昇方向）</td><td>その後の上昇が<em>直前の高値を上抜けた</em>瞬間</td></tr>
+<tr><td><strong>戻り高値</strong>（下降方向）</td><td>その後の下落が<em>直前の安値を下抜けた</em>瞬間</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="basic-block cs-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/cs_clod_anime.svg" alt="CS"></div>
+<div class="basic-speech">
+<div class="basic-name cs-name">CS</div>
+<div class="basic-text">用語の精度の話をさせてほしい。<br><br>「押し安値」「戻り高値」はどちらも、<em>確定した後</em>にしか使えない言葉だ。反発して戻ってきた安値を見て「押し安値だ」と言いたくなる場面があるが——高値ブレイクが起きるまでは「<strong>直近安値</strong>」または「<strong>押し安値候補</strong>」が正確だ。<br><br>言葉の精度が、そのまま判断の精度になる。</div>
+</div>
+</div>
+
+<div class="cs-note">
+<div class="cs-note-label">CS Note — 用語の使用基準</div>
+<div class="cs-note-text">確定前 →「<strong>直近安値</strong>／<strong>直近高値</strong>」または「〜<strong>候補</strong>」。<br>確定後 →「<strong>押し安値</strong>／<strong>戻り高値</strong>」。<br>下から戻ってきた高値を、確定前に「戻り高値」と呼ばない。</div>
+</div>
+
+<hr class="ut-divider" />
+
+<!-- ========== Section 03 ========== -->
+<div class="ut-section">
+<div class="section-eyebrow">Section 03</div>
+<h2 class="section-title">目線判断と確定の関係</h2>
+<div class="section-body">B-1で「押し安値が割れたら目線が変わる」と学んだ。B-2の視点から見直すと、ひとつ重要なことが見えてくる。</div>
+<div class="section-body">押し安値は<em>確定した後</em>にしか「押し安値」と呼べない。つまり、目線判断の根拠にできる安値は、そもそも<strong>確定済みのものだけ</strong>だ。</div>
+</div>
+
+<div class="point-box">
+<div class="point-box-label">Key Point</div>
+<div class="point-box-text">目線判断の根拠に使える安値は、<strong>確定済みの押し安値だけ</strong>。<br><br>「あそこを割ったら目線が変わる」と言えるのは、その安値が押し安値として確定した後だけだ。確定前の候補に依存した判断は、構造的に不安定になる——これが「目線が迷う」原因のひとつになっている。</div>
+</div>
+
+<div class="basic-block mori-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/mori_claude_anime.svg" alt="Mori"></div>
+<div class="basic-speech">
+<div class="basic-name mori-name">Mori</div>
+<div class="basic-text">「未来が過去を確定させる」——これはチャートだけの話じゃない。<br><br>ある動きが押し目だったか、転換だったか。それも<strong>後から確定する</strong>。<br><br>だから、確定前に決め打ちして焦らなくていい。構造が確定するのを、静かに待てばいい。</div>
+</div>
+</div>
+
+<hr class="ut-divider" />
+
+<!-- ========== Summary ========== -->
+<div class="ut-section">
+<div class="section-eyebrow">Summary</div>
+<h2 class="section-title">B-2のポイントを整理する</h2>
+</div>
+
+<div class="ut-table-wrap">
+<table class="ut-table">
+<thead>
+<tr><th>概念</th><th>内容</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>押し安値の確定</strong></td><td>その後の反発が直前高値をブレイクした瞬間に確定。それまでは<em>「直近安値」</em></td></tr>
+<tr><td><strong>戻り高値の確定</strong></td><td>その後の下落が直前安値をブレイクした瞬間に確定。それまでは<em>「直近高値」</em>。押し安値の完全な鏡像</td></tr>
+<tr><td><strong>逆説的な構造</strong></td><td>d（安値）は c（高値）より時間的に先に存在するが、<strong>認識の確定は c の後</strong></td></tr>
+<tr><td><strong>目線判断との接続</strong></td><td>目線の根拠に使える安値は<strong>確定済みの押し安値のみ</strong>。候補段階では根拠にならない</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="basic-block mori-block">
+<div class="basic-icon"><img src="https://ultra-theory.jp/wp-content/uploads/ico/mori_claude_anime.svg" alt="Mori"></div>
+<div class="basic-speech">
+<div class="basic-name mori-name">Mori</div>
+<div class="basic-text">確定の構造が腑に落ちると、焦りが減る。<br><br>でも実戦では、せっかく確定した押し安値を、目の前の小さな揺れがかき消してしまう。<br><br>次の <strong>B-3</strong> では、その揺れから目線を守る——<strong>「粒度の固定」</strong>を扱う。確定済みの押し安値を、どう守り抜くか。</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="ut-preview-head"><div class="t">B-3｜粒度の固定</div><div class="s">CHAPTER B-3 — GRANULARITY</div></div>
+<div class="ut-chapter-wrap-v1">
+<img src="https://ultra-theory.jp/wp-content/uploads/2026/03/800x500_contents_forest.jpg" alt="" width="800" height="500" class="alignnone size-full wp-image-853" />
+<!-- ===== B-3｜粒度の固定（中核セクション・ドラフト） ===== -->
+
+<div class="section-eyebrow">B-3｜粒度の固定</div>
+
+<!-- リード -->
+<div class="chapter-lead">1枚のチャートには、<strong>粒度の違う「押し安値」が同時に存在している</strong>。
+どの押し安値を判断基準にするかを決めて、そこに留まり続ける——それが<strong>粒度の固定</strong>だ。
+このセクションでは、実際のチャートで「目視が下を向いても判断が揺るがない」とはどういうことかを、最後まで追いかける。</div>
+
+<!-- Section｜2つの押し安値 -->
+<div class="ut-section">
+<div class="section-eyebrow">Section 01</div>
+<h2 class="section-title">押し安値は、粒度ごとに存在する</h2>
+<div class="section-rule"></div>
+<div class="section-body">同じチャートでも、見ている粒度が変われば「押し安値」は別の場所になる。
+<em>小さな上昇には小さな押し安値</em>があり、<em>大きな上昇には大きな押し安値</em>がある。
+この2つは同時に走っていて、しかも<strong>割れるタイミングがずれる</strong>。ここに迷いの種がある。</div>
+</div>
+
+<!-- CSの語り -->
+<div class="basic-block cs-block">
+<div class="basic-icon">
+<img src="https://ultra-theory.jp/wp-content/uploads/ico/cs_clod_anime.svg" alt="CS-Clod">
+</div>
+<div class="basic-speech">
+<div class="basic-name cs-name">CS</div>
+<div class="basic-text">このチャートで起きていることを、順に追う。
+
+<strong>B から C への上昇</strong>——これを上昇アと呼ぶ。この上昇を支えている押し安値は <strong>B</strong> だ。ローソク波レベルで「上昇が生きているか」を判断する基準は、ただ一点、<em>Bが割れたか</em>。これだけ。
+
+途中の安値 <strong>x</strong> は、B→C をつくっている"もっと小さな上昇"の押し安値だ。粒度がひとつ下。
+
+さて、C のあと <strong>y</strong> が x を割ってきた。ここで小さな上昇は転換する。多くの人が最初に揺れるのがこの瞬間だ——「もう下かな？」
+
+だが話は終わらない。y からの戻りは C を越えられず、切り下げ高値 <strong>C'</strong> をつくる。そして <strong>z</strong> へ。C→y→C'→z——切り下げの高値と安値が揃い、目視レベルでは立派な下降トレンドが"完成"する。ここでほとんどの人が確信する。「天井は C で決まった。目線は下だ」
+
+——これが、<em>粒度の混在</em>の正体だ。
+
+下位粒度（x・C'・z）で起きている下降を、上位粒度（B）の判断にまで持ち込んでしまっている。だが上位粒度の判断基準は最初から変わっていない。<em>Bが割れたか</em>。そして B は、一度も割れていない。
+
+結末はチャートの右側にある。B が守られたまま買いが戻り、<strong>E が C を上抜けた</strong>。上昇は続いていた。天井だと思われた C はただの通過点で、下降だと思われた z は——<strong>次の押し安値 D に昇格した</strong>。</div>
+</div>
+</div>
+
+<!-- 図解（ズーム対応） -->
+<div class="figure-wrap">
+
+<div class="ut-zoomfig-guide" style="display:table;width:100%;box-sizing:border-box;margin:0 0 12px;padding:12px 16px;background:linear-gradient(90deg,#fdf6e3,#fbefd6);border:1px solid #e3cd92;border-radius:8px;box-shadow:0 1px 4px rgba(176,138,48,0.15);">
+<div style="display:table-cell;width:44px;vertical-align:middle;">
+<span class="ut-zoomfig-glass" style="display:inline-block;width:34px;height:34px;line-height:30px;text-align:center;font-size:17px;background:#fffdf6;border:2px solid #b08a30;border-radius:50%;box-sizing:border-box;">🔍</span>
+</div>
+<div style="display:table-cell;vertical-align:middle;padding-left:12px;">
+<div style="font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:0.2em;color:#b08a30;margin-bottom:3px;">TAP TO ZOOM</div>
+<div style="font-size:13.5px;font-weight:bold;color:#3a2f12;line-height:1.5;">図解はこの枠の中で拡大できます</div>
+<div style="font-size:12px;color:#8a7a4a;line-height:1.6;margin-top:2px;">ダブルタップ → 拡大　／　ドラッグ → 移動　／　2本指 → ピンチ</div>
+</div>
+</div>
+<script>
+(function(){
+if(!document.getElementById('ut-zoomfig-guide-kf')){
+var s=document.createElement('style');
+s.id='ut-zoomfig-guide-kf';
+s.textContent='@keyframes utZoomGlassPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(176,138,48,0.4);}50%{transform:scale(1.1);box-shadow:0 0 0 7px rgba(176,138,48,0);}}.ut-zoomfig-glass{animation:utZoomGlassPulse 2.2s ease-in-out infinite;}';
+document.head.appendChild(s);
+}
+})();
+</script>
+
+<div class="ut-zoomfig" style="position:relative;overflow:hidden;border-radius:0;background:#fff;touch-action:pan-y;cursor:zoom-in;">
+<img src="https://ultra-theory.jp/wp-content/uploads/ut-workout/2/fig2-b3-01.jpg" alt="粒度の固定｜B/C/x/y/C'/z/E/D で読む、転換に見えて続いた上昇" draggable="false" style="width:100%;height:auto;display:block;transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none;pointer-events:none;">
+<div class="ut-zoomfig-hint" style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(26,26,26,0.75);color:#fff;font-size:11px;letter-spacing:0.08em;padding:5px 14px;border-radius:14px;pointer-events:none;transition:opacity 0.4s;white-space:nowrap;">ダブルタップ／ダブルクリックで拡大</div>
+<button type="button" class="ut-zoomfig-reset" style="display:none;position:absolute;top:10px;right:10px;background:rgba(26,26,26,0.75);color:#fff;border:0;font-size:10px;letter-spacing:0.15em;padding:6px 12px;border-radius:4px;cursor:pointer;font-family:'Share Tech Mono',monospace;">RESET</button>
+</div>
+
+<div class="figure-caption">Fig.01 — 目視は下を向いた。だが押し安値 B は割れていない</div>
+
+<div class="ut-fig-help" style="margin:14px 0 0;padding:11px 15px;background:#f4f6f8;border-left:4px solid #9fb0c4;border-radius:6px;box-sizing:border-box;">
+<div style="display:table;width:100%;">
+<div style="display:table-cell;width:28px;vertical-align:top;"><span style="display:inline-block;width:18px;height:18px;line-height:18px;text-align:center;font-size:12px;font-weight:bold;color:#fff;background:#9fb0c4;border-radius:50%;">?</span></div>
+<div style="display:table-cell;vertical-align:top;font-size:12px;line-height:1.75;color:#556;"><strong style="color:#3a4a5c;">PC上でドラッグがうまく動かないときは</strong><br>画像を拡大した後、または一度ドラッグした後に再びドラッグしても動かない場合は、<strong>画像の外側を一度クリック</strong>してから、もう一度画像をドラッグすると動くことがあります。</div>
+</div>
+</div>
+
+</div>
+
+<!-- 図のラベル割り -->
+<div class="ut-table-wrap">
+<table class="ut-table">
+<thead>
+<tr>
+<th>ラベル</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>A</strong></td><td>このストーリーの起点となる、左の高値</td></tr>
+<tr><td><strong>B</strong></td><td>上昇アの起点＝<em>ローソク波レベルの押し安値</em>。これが割れない限り上昇は生きている</td></tr>
+<tr><td><strong>上昇ア</strong></td><td>B→C をつくった上昇トレンド</td></tr>
+<tr><td><strong>x</strong></td><td>B→C 内部の<em>下位粒度（目視）の押し安値</em></td></tr>
+<tr><td><strong>C</strong></td><td>上昇アの高値（暫定の天井）</td></tr>
+<tr><td><strong>y</strong></td><td>x を割ってきた安値（＝小さな上昇の転換）</td></tr>
+<tr><td><strong>C'</strong></td><td>y からの戻りでできた<em>切り下げ高値</em></td></tr>
+<tr><td><strong>z</strong></td><td>C' からの<em>切り下げ安値</em>。C→y→C'→z で下降トレンドが完成して"見える"</td></tr>
+<tr><td><strong>E</strong></td><td>C を上抜けた高値（＝上昇継続の確定）</td></tr>
+<tr><td><strong>D</strong></td><td>E のブレイクで<em>新しい押し安値に昇格した z</em></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- OK/NG 再定義 -->
+<div class="ut-grain-compare">
+<div class="ut-grain-card ng">
+<div class="ut-grain-card-head">粒度の混在（NG）</div>
+<div class="ut-grain-card-body">C→y→C'→z の下降に飲まれ、
+<strong>「天井は C・目線は下」と決めつける</strong>。
+判断基準を、下位粒度の出来事（x割れ・C'・z）に
+明け渡してしまっている。</div>
+</div>
+<div class="ut-grain-card ok">
+<div class="ut-grain-card-head">粒度の固定（OK）</div>
+<div class="ut-grain-card-body">下位粒度の下降は「見る」。
+だが判断基準は<strong>押し安値 B が割れたか</strong>だけに固定。
+B が生きている限り、x割れも C→C' も
+ノイズとして処理する。</div>
+</div>
+</div>
+
+<!-- CSノート -->
+<div class="cs-note">
+<div class="cs-note-label">CS Note — 粒度の固定の実態</div>
+<div class="cs-note-text">目視で「下に引っ張られる感覚」は消えない。C' や z が切り下がれば、誰だって下を意識する。
+問題はその感覚のまま判断を動かすこと。
+<strong>感覚は感じたまま、判断基準だけを別レイヤー（押し安値 B）に固定しておく</strong>——これが粒度の固定の実態だ。</div>
+</div>
+
+<!-- OMEGA格言 -->
+<div class="basic-block omega-block">
+<div class="basic-icon">
+<img src="https://ultra-theory.jp/wp-content/uploads/ico/clod-omega-anime1.svg" alt="OMEGA">
+</div>
+<div class="basic-speech">
+<div class="basic-name omega-name">OMEGA</div>
+<div class="basic-text">下位の揺れは、上位の物語を変えない。
+粒度を決めた者にだけ、チャートは一本の線で語る。</div>
+</div>
+</div>
+
+<!-- まとめ -->
+<div class="point-box">
+<div class="point-box-label">Key Point — B-3のまとめ</div>
+<div class="point-box-text">① 1枚のチャートに、粒度の違う押し安値が同時に存在する（小＝x ／ 大＝B）
+② 粒度の固定とは、判断する粒度を決め、<strong>その押し安値だけを基準にする</strong>こと
+③ 下位粒度の下降（x割れ・C'・z）は「見る」が、上位粒度（B）の判断には入れない
+④ B が割れない限り上昇は生きている——E が C をブレイクし、z は新しい押し安値 D へ</div>
+</div>
+
+<!-- 次回への種まき -->
+<div class="next-cue">
+C→y→C'→z のように"転換したと見せて戻される"動きは、後の章で<strong>ユニバーサルパターン</strong>として正面から扱う。
+<span class="next-cue-soft">今は「粒度を固定すれば飲まれない」——それだけ持って帰ればいい。</span>
+</div>
+
+</div>
+<!-- /.ut-chapter-wrap-v1 -->
+
+<script>
+(function(){
+function initZoom(box){
+if(box.dataset.utzReady)return;
+box.dataset.utzReady='1';
+var img=box.querySelector('img');
+var hint=box.querySelector('.ut-zoomfig-hint');
+var rst=box.querySelector('.ut-zoomfig-reset');
+var scale=1,tx=0,ty=0,lastDist=0,lastTap=0;
+var ptrs=new Map();
+function clampPan(){
+var r=box.getBoundingClientRect();
+var minX=r.width-r.width*scale;
+var minY=r.height-r.height*scale;
+tx=Math.min(0,Math.max(minX,tx));
+ty=Math.min(0,Math.max(minY,ty));
+}
+function apply(){
+img.style.transform='translate('+tx+'px,'+ty+'px) scale('+scale+')';
+box.style.touchAction=(scale>1)?'none':'pan-y';
+box.style.cursor=(scale>1)?'grab':'zoom-in';
+rst.style.display=(scale>1)?'block':'none';
+}
+function zoomAt(cx,cy,f){
+var r=box.getBoundingClientRect();
+var x=cx-r.left,y=cy-r.top;
+var ns=Math.min(6,Math.max(1,scale*f));
+tx=x-(x-tx)*(ns/scale);
+ty=y-(y-ty)*(ns/scale);
+scale=ns;clampPan();apply();
+if(hint){hint.style.opacity=0;}
+}
+function resetAll(){scale=1;tx=0;ty=0;apply();}
+box.addEventListener('touchstart',function(e){if(e.touches.length>1){e.preventDefault();}},{passive:false});
+box.addEventListener('pointerdown',function(e){
+box.setPointerCapture(e.pointerId);
+ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+if(ptrs.size===2){
+var a=Array.from(ptrs.values());
+lastDist=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);
+}
+if(e.pointerType==='touch'&&ptrs.size===1){
+var now=Date.now();
+if(now-lastTap<300){
+if(scale>1){resetAll();}else{zoomAt(e.clientX,e.clientY,2.5);}
+}
+lastTap=now;
+}
+});
+box.addEventListener('pointermove',function(e){
+if(!ptrs.has(e.pointerId))return;
+var prev=ptrs.get(e.pointerId);
+ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+if(ptrs.size===1&&scale>1){
+tx+=e.clientX-prev.x;ty+=e.clientY-prev.y;
+clampPan();apply();
+}else if(ptrs.size===2){
+var a=Array.from(ptrs.values());
+var d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);
+var mx=(a[0].x+a[1].x)/2,my=(a[0].y+a[1].y)/2;
+if(lastDist>0){zoomAt(mx,my,d/lastDist);}
+lastDist=d;
+}
+});
+function up(e){ptrs.delete(e.pointerId);if(ptrs.size<2){lastDist=0;}}
+box.addEventListener('pointerup',up);
+box.addEventListener('pointercancel',up);
+box.addEventListener('wheel',function(e){
+e.preventDefault();
+zoomAt(e.clientX,e.clientY,e.deltaY<0?1.2:1/1.2);
+},{passive:false});
+box.addEventListener('dblclick',function(e){
+if(scale>1){resetAll();}else{zoomAt(e.clientX,e.clientY,2.5);}
+});
+rst.addEventListener('click',function(e){e.stopPropagation();resetAll();});
+}
+document.querySelectorAll('.ut-zoomfig').forEach(initZoom);
+})();
+</script>
+</div>
+</body>
+</html>
